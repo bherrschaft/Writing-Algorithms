@@ -1,47 +1,51 @@
 public class BubbleSort {
 
-    // Bubble Sort function
+    // Bubble Sort function that sorts an array in place
     public static void bubbleSort(int[] arr, int n) {
-        // Iterate through the entire array
+        // Outer loop to iterate over the entire array n-1 times
         for (int i = 0; i < n - 1; i++) {
-            // Flag to check if any swapping happens in the current pass
+            // Flag to check if any swapping occurs in the current pass
             boolean swapped = false;
 
-            // Traverse the array from 0 to n-i-1
+            // Inner loop to perform the adjacent element comparison and swapping
             for (int j = 0; j < n - i - 1; j++) {
-                // Swap if the element found is greater than the next element
+                // Compare the current element with the next
                 if (arr[j] > arr[j + 1]) {
+                    // Swap if the current element is greater than the next
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swapped = true;
+                    swapped = true; // Set swapped flag to true since a swap occurred
                 }
             }
 
-            // If no two elements were swapped in the inner loop, break
+            // If no elements were swapped, the array is sorted, so break early
             if (!swapped) {
                 break;
             }
         }
     }
 
-    // Function to print an array
+    // Utility function to print an array
     public static void printArray(int[] arr) {
+        // Iterate through the array and print each element
         for (int num : arr) {
             System.out.print(num + " ");
         }
-        System.out.println();
+        System.out.println(); // Print a newline for better formatting
     }
 
     public static void main(String[] args) {
+        // Example array 1 to sort
         int[] arr1 = {4, 1, 3, 9, 7};
-        bubbleSort(arr1, arr1.length);
+        bubbleSort(arr1, arr1.length); // Sort the array
         System.out.println("Sorted array using Bubble Sort is:");
-        printArray(arr1);
+        printArray(arr1); // Print the sorted array
 
+        // Example array 2 to sort
         int[] arr2 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        bubbleSort(arr2, arr2.length);
+        bubbleSort(arr2, arr2.length); // Sort the array
         System.out.println("Sorted array using Bubble Sort is:");
-        printArray(arr2);
+        printArray(arr2); // Print the sorted array
     }
 }

@@ -1,43 +1,35 @@
 public class CountingSort {
 
-    // Counting Sort function for strings
-    public static String countSort(String arr) {
-        int n = arr.length();
-        char[] output = new char[n]; // output character array
-        int[] count = new int[256];  // array to store count of each character
-
-        // Initialize count array
-        for (int i = 0; i < 256; ++i) {
-            count[i] = 0;
-        }
+    // Counting Sort function that sorts a string in lexicographical order
+    public static String countSort(String str) {
+        int n = str.length(); // Length of the string
+        char[] output = new char[n]; // Array to store sorted characters
+        int[] count = new int[256]; // Array to store count of characters
 
         // Store count of each character
         for (int i = 0; i < n; ++i) {
-            count[arr.charAt(i)]++;
+            count[str.charAt(i)]++;
         }
 
-        // Change count[i] so that count[i] contains the position of this character in output[]
+        // Modify count array to store actual positions
         for (int i = 1; i <= 255; ++i) {
             count[i] += count[i - 1];
         }
 
         // Build the output character array
         for (int i = n - 1; i >= 0; i--) {
-            output[count[arr.charAt(i)] - 1] = arr.charAt(i);
-            count[arr.charAt(i)]--;
+            output[count[str.charAt(i)] - 1] = str.charAt(i);
+            count[str.charAt(i)]--;
         }
 
-        // Convert output array to string and return
-        return new String(output);
+        return new String(output); // Convert the output array to a string
     }
 
     public static void main(String[] args) {
-        String str1 = "edsab";
-        System.out.println("Sorted string using Counting Sort is:");
-        System.out.println(countSort(str1));
+        String str1 = "edsab"; // Example string 1
+        System.out.println("Sorted string is: " + countSort(str1)); // Sort and print
 
-        String str2 = "geeksforgeeks";
-        System.out.println("Sorted string using Counting Sort is:");
-        System.out.println(countSort(str2));
+        String str2 = "geeksforgeeks"; // Example string 2
+        System.out.println("Sorted string is: " + countSort(str2)); // Sort and print
     }
 }

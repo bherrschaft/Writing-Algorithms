@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d69ccb-55a2-46c6-bfbd-9c8c5fc265ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BubbleSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CountingSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/QuickSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ZAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountingSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -26,21 +33,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "bherrschaft"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bherrschaft&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/bherrschaft/Writing-Algorithms.git",
-    "accountId": "455a0ebc-ea0b-43a0-ab7f-cd65f895ba1d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bherrschaft/Writing-Algorithms.git&quot;,
+    &quot;accountId&quot;: &quot;455a0ebc-ea0b-43a0-ab7f-cd65f895ba1d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kYifg2fB8UMcjdPkVVrC8XzKe4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,6 +56,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BubbleSort.executor": "Run",
+    "Application.CountingSort.executor": "Run",
+    "JUnit.BubbleSortTest.executor": "Run",
+    "JUnit.CountingSortTest.executor": "Run",
+    "JUnit.QuickSortTest.executor": "Run",
+    "JUnit.ZAlgorithmTest.executor": "Run",
+    "JUnit.ZAlgorithmTest.testSearchPatternEmptyPattern.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -62,25 +76,60 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CountingSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BubbleSort" />
+  <component name="RunManager" selected="JUnit.ZAlgorithmTest">
+    <configuration name="BubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Writing-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BubbleSortTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountingSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountingSort" />
+    <configuration name="CountingSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Writing-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountingSortTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Writing-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuickSortTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Writing-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ZAlgorithmTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZAlgorithmTest.testSearchPatternEmptyPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Writing-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ZAlgorithmTest" />
+      <option name="METHOD_NAME" value="testSearchPatternEmptyPattern" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountingSort" />
-        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="JUnit.ZAlgorithmTest" />
+        <item itemvalue="JUnit.QuickSortTest" />
+        <item itemvalue="JUnit.CountingSortTest" />
+        <item itemvalue="JUnit.BubbleSortTest" />
+        <item itemvalue="JUnit.ZAlgorithmTest.testSearchPatternEmptyPattern" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +149,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723467019072</updated>
-      <workItem from="1723467020153" duration="1542000" />
+      <workItem from="1723467020153" duration="3724000" />
+      <workItem from="1723474868050" duration="2098000" />
     </task>
     <servers />
   </component>
