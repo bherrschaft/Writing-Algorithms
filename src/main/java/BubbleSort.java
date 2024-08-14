@@ -12,16 +12,16 @@ public class BubbleSort {
                 // Compare the current element with the next
                 if (arr[j] > arr[j + 1]) {
                     // Swap if the current element is greater than the next
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    int temp = arr[j]; // Store the current element in a temporary variable
+                    arr[j] = arr[j + 1]; // Move the next element to the current position
+                    arr[j + 1] = temp; // Move the stored current element to the next position
                     swapped = true; // Set swapped flag to true since a swap occurred
                 }
             }
 
             // If no elements were swapped, the array is sorted, so break early
             if (!swapped) {
-                break;
+                break; // Exit the loop early if the array is already sorted
             }
         }
     }
@@ -30,22 +30,31 @@ public class BubbleSort {
     public static void printArray(int[] arr) {
         // Iterate through the array and print each element
         for (int num : arr) {
-            System.out.print(num + " ");
+            System.out.print(num + " "); // Print each element followed by a space
         }
         System.out.println(); // Print a newline for better formatting
     }
 
     public static void main(String[] args) {
         // Example array 1 to sort
-        int[] arr1 = {4, 1, 3, 9, 7};
-        bubbleSort(arr1, arr1.length); // Sort the array
+        int[] arr1 = {4, 1, 3, 9, 7}; // Initialize an array with unsorted elements
+        bubbleSort(arr1, arr1.length); // Sort the array using the bubbleSort function
         System.out.println("Sorted array using Bubble Sort is:");
         printArray(arr1); // Print the sorted array
 
         // Example array 2 to sort
-        int[] arr2 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        bubbleSort(arr2, arr2.length); // Sort the array
+        int[] arr2 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}; // Initialize another array with unsorted elements
+        bubbleSort(arr2, arr2.length); // Sort the second array using the bubbleSort function
         System.out.println("Sorted array using Bubble Sort is:");
         printArray(arr2); // Print the sorted array
     }
+
+    /*
+     * Summary:
+     * The code implements a Bubble Sort algorithm, which sorts an array by comparing
+     * and swapping adjacent elements if they are in the wrong order. The process is
+     * repeated until the array is fully sorted. The bubbleSort function handles the sorting,
+     * and the printArray function prints the array. The main method demonstrates the sorting
+     * with two example arrays.
+     */
 }
