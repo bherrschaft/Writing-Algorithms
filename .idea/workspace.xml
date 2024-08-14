@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00d69ccb-55a2-46c6-bfbd-9c8c5fc265ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountingSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZAlgorithm.java" afterDir="false" />
-    </list>
+    <list default="true" id="00d69ccb-55a2-46c6-bfbd-9c8c5fc265ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,6 +143,7 @@
       <workItem from="1723474868050" duration="3742000" />
       <workItem from="1723480615899" duration="4130000" />
       <workItem from="1723646161185" duration="2978000" />
+      <workItem from="1723656042624" duration="160000" />
     </task>
     <servers />
   </component>
